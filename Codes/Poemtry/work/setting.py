@@ -1,0 +1,10 @@
+DISALLOWED_WORDS = ['（', '）', '(', ')', '__', '《', '》', '【', '】', '[', ']']
+SPLIT_SYMBOL = ':'
+MAX_LEN = 64
+MIN_WORD_FREQUENCY = 8
+BATCH_SIZE = 16
+DATASET_PATH = './poetry.txt'
+SHOW_NUM = 5
+TRAIN_EPOCH = 20
+BEST_MODEL_PATH = r'./Poemtry/work/best_model.h5'
+TOKENIZER_PATH = r'./Poemtry/work/tokenizer.json'

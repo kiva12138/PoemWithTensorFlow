@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI写诗，藏头诗，续写诗，自动写诗</title>
+
+<!-- CSS -->
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+<link rel="stylesheet" href="/static/assets/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="/static/assets/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="/static/assets/css/form-elements.css">
+<link rel="stylesheet" href="/static/assets/css/style.css">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!-- Favicon and touch icons -->
+<link rel="shortcut icon" href="/static/assets/ico/favicon.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/static/assets/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/static/assets/ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/static/assets/ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="/static/assets/ico/apple-touch-icon-57-precomposed.png">
+
+</head>
+
+<body>
+
+<!-- Top menu -->
+<nav class="navbar navbar-inverse navbar-no-bg" role="navigation">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-1">
+				<span class="sr-only"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="index.html"></a>
+		</div>
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="top-navbar-1">
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<span class="li-social">
+						<a href="mailto:sunhaoxx@foxmail.com" target="view_window"><i class="fa fa-envelope"></i></a>
+						<a href="https://github.com/kiva12138/PoemWithTensorFlow" target="view_window"><i class="fa fa-github"></i></a>
+					</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<!-- Top content -->
+<div class="top-content">
+
+	<div class="inner-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-8 col-sm-offset-2 text">
+					<h1><strong>AI</strong> 机器学习 自动写诗</h1>
+					<div class="description">
+						<p>
+							<strong>本网站项目使用机器学习进行自动写诗，项目已经开源至
+								<a href="https://github.com/kiva12138/PoemWithTensorFlow" target="view_window" style="color: #E6A23C">
+									<strong>Github</strong>
+								</a>
+								, 欢迎您的Mark
+							</strong>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6 col-sm-offset-3 form-box">
+
+					<form role="form" action="/write" method="get" class="registration-form">
+
+						<fieldset>
+							<div class="form-top">
+								<div class="form-top-left">
+									<h3>选择您要写诗的类别并执行</h3>
+    								<p>可以选择随机诗、藏头诗、续写诗</p>
+								</div>
+								<div class="form-top-right">
+									<i class="fa fa-github"></i>
+								</div>
+							</div>
+							<div class="form-bottom">
+								<div class="form-group">
+									<select placeholder="选择类型" name="form-facebook"
+											id="form-facebook-id"
+											class="form-facebook form-control">
+									  <option value ="random" selected="selected">随机生成</option>
+									  <option value ="head">藏头诗</option>
+									  <option value="start">续写诗</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<input type="text" name="form-content"
+											id="form-twitter-id" placeholder="输入您的内容..." class="form-twitter form-control input-disabled">
+								</div>
+								<span>
+									<button type="submit" class="btn" id="submit-button">生成诗句</button>
+									<span class="" id="loading-show">
+										<span></span>
+										<span></span>
+										<span></span>
+										<span></span>
+										<span></span>
+									</span>
+								</span>
+								<div>
+									<div id="result_show" >
+										您生成的结果将会在这里显示
+									</div>
+									<div style="font: 0px/0px sans-serif;clear: both;display: block"> </div>
+								</div>
+							</div>
+						</fieldset>
+					</form>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<!-- Javascript -->
+<script src="/static/assets/js/jquery-1.11.1.min.js"></script>
+<script src="/static/assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="/static/assets/js/jquery.backstretch.min.js"></script>
+<script src="/static/assets/js/retina-1.1.0.min.js"></script>
+<script src="/static/assets/js/scripts.js"></script>
+
+<!--[if lt IE 10]>
+	<script src="/static/assets/js/placeholder.js"></script>
+<![endif]-->
+
+</body>
+
+</html>
